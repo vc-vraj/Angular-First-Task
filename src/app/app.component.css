@@ -1,0 +1,14 @@
+.main {
+    border: 5px solid black;
+    padding: 15px;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    width: 20%;
+}
+.home {
+    width: 79%;
+}
