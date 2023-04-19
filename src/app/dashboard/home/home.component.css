@@ -1,8 +1,26 @@
-div{
+.main{
     width: 100%;
     border: 5px solid rgb(91, 64, 198);
     margin-bottom: 15px;
     font-size: 30px;
     text-align: center;
+    height: 100%;
     padding: 200px 0px;
+}
+.demo {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black ;
+    border-radius: 5px;
+}
+.random-color {
+    padding: 40px; 
+}
+.random-color button {
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
 }

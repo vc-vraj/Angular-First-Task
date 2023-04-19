@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { LayoutModule } from './layout/layout.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -17,7 +19,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    DashboardModule
+    DashboardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

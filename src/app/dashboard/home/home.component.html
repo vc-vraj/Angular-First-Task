@@ -1,1 +1,11 @@
-<div> Home </div>
+<div class="main">{{home}} <br>
+    <!-- <input type="text" [(ngModel)]="userName" placeholder="Enter your name"> -->
+    <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+    <br>
+    <button (click)="alertName(userName)">click Here</button>
+
+    <div class="random-color">
+        <div class= "demo" [style.backgroundColor]="getRandomColor()"></div>
+        <button (click)="randomColor()">Click</button>
+    </div>
+</div>

@@ -4,5 +4,6 @@ div {
     margin-bottom: 15px;
     font-size: 30px;
     text-align: center;
+    height: 100%;
     padding: 200px 0px;
 }
