@@ -6,16 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  public home = "Home";
-  public userName = "";
+  home = "Home";
+  userName = "";
+  backgroundColor = "white";
+
   alertName(value: string): void {
     alert(`Hello ${value}`);
   };
 
-  backgroundColor = "white"
-  randomColor(): void {
-    this.getRandomColor();
-  }
   getRandomColor(): void {
     const letters = "0123456789ABCDEF";
     let color = "#";
