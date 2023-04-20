@@ -6,20 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  home = "Home";
-  userName = "";
+  public home = "Home";
+  public userName = "";
   alertName(value: string): void {
     alert(`Hello ${value}`);
   };
+
+  backgroundColor = "white"
   randomColor(): void {
     this.getRandomColor();
   }
-  getRandomColor(): string {
+  getRandomColor(): void {
     const letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
-    return color;
+    this.backgroundColor = color;
   }
 }
