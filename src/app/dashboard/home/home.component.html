@@ -7,4 +7,12 @@
         <div class= "demo" [style.backgroundColor]="backgroundColor"></div>
         <button (click)="getRandomColor()">Click</button>
     </div>
+    <div>
+        
+        <app-string-concat [string1] = "string1" [string2] = "string2" (newStringEvent)="concatingString($event)"></app-string-concat>
+        {{concatString}}
+    </div>
+    <div class="string-value">
+        
+    </div>
 </div>
