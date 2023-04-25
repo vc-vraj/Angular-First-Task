@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HooksComponent } from './hooks.component';
+import { SecondStringComponent } from './second-string.component';
 
-describe('HooksComponent', () => {
-  let component: HooksComponent;
-  let fixture: ComponentFixture<HooksComponent>;
+describe('SecondStringComponent', () => {
+  let component: SecondStringComponent;
+  let fixture: ComponentFixture<SecondStringComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HooksComponent ]
+      declarations: [ SecondStringComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HooksComponent);
+    fixture = TestBed.createComponent(SecondStringComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,37 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  home = "Home";
-  userName = "";
-  backgroundColor = "";
-  string1 = "Hello";
-  string2 = "World"
-  concatString = this.string1 + this.string2;
-
-  ngOnInit(): void {
-    console.log("ngOnInit of Home called ")
-     this.backgroundColor = "red" 
-  }
-
-  alertName(value: string): void {
-    alert(`Hello ${value}`);
-  };
-
-  getRandomColor(): void {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    console.log(color)
-    this.backgroundColor = color;
-  }
-
-  concatingString(value: string): void {
-    this.concatString = value;
-  }
-
+  InitialFirstString = "Hello";
+  InitialSecondString = "World";
+  concatString = `${this.InitialFirstString} ${this.InitialSecondString}`;
   
+  getFirstString(value: string): void {
+    this.InitialFirstString = value;
+  }  
+
+  getSeconfString(value: string): void {
+    this.InitialSecondString = value;
+  }
+
+  concating(): void {
+    this.concatString = `${this.InitialFirstString} ${this.InitialSecondString}`;
+  }
 }

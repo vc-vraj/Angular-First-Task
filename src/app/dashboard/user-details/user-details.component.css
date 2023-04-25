@@ -1,0 +1,20 @@
+table{
+    border: 0.5px solid;
+    border-collapse: collapse;
+}
+table {
+    width: 50%;
+    margin: 10px auto;
+    
+}
+td {
+    text-align: center;
+    padding: 5px 0px;
+}
+.labelClass {
+    color: rgb(59, 59, 195);
+    font-weight: bold;
+}
+.row-bg-color {
+    background-color: rgb(225 225 225);
+}

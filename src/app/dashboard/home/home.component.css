@@ -27,3 +27,17 @@
 .string-value{
     font-size: larger;
 }
+.output {
+    width: fit-content;
+    border-bottom: 2px solid black;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.string-concat {
+    margin-top: 0 auto;
+    width: fit-content;
+    background-color: rgb(170, 169, 169);
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+}

@@ -1,18 +1,25 @@
-<div class="main">{{home}} <br>
-    <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+<div class="main"><br>
+    <!-- <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
     <br>
     <button (click)="alertName(userName)">click Here</button>
 
     <div class="random-color">
         <div class= "demo" [style.backgroundColor]="backgroundColor"></div>
         <button (click)="getRandomColor()">Click</button>
-    </div>
-    <div>
-        
-        <app-string-concat [string1] = "string1" [string2] = "string2" (newStringEvent)="concatingString($event)"></app-string-concat>
+    </div> -->
+    <div class="output">
         {{concatString}}
     </div>
-    <div class="string-value">
+    <div class="string-concat">
+        <div class="first-string">
+            <app-first-string [firstString]="InitialFirstString" (newFirstStringEvent)="getFirstString($event)"></app-first-string>         
+        </div>
+        <div class="second-str">
+            <app-second-string [secondString]="InitialSecondString" (newSecondStringEvent)="getSeconfString($event)"></app-second-string>
+        </div>
+        <div class="string-value">
+            <app-string-concat (newStringEvent)="concating()"></app-string-concat>
+        </div>
         
     </div>
 </div>
